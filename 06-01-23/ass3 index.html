@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle>Bhargav</tittle>
+    </head>
+    <body>
+        <script>
+            let evn = "dev";
+            let amount = 100;
+            switch(evn){
+                case "dev":
+                amount=amount+(amount*0.10);
+                console.log(amount);
+                break;
+                case"test":
+                amount=amount+(amount*0.20);
+                console.log(amount);
+                break;
+                case"stage":
+                amount=amount+(amount*0.30);
+                console.log(amount);
+                break;
+                default:
+                    amount=amount+(amount*0.05);
+                    console.log(amount);
+            }
+        </script>
+    </body>
+</html>
