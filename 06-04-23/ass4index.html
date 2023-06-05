@@ -1,0 +1,34 @@
+<script>
+let hobbies = ["reading", "painting", "hiking", "photography"];
+
+function displayHobbies() {
+  console.log("My Hobbies:");
+  console.log(hobbies);
+}
+
+// Function to add a new hobby to the existing list
+function addHobby(newHobby) {
+  hobbies.push(newHobby);
+  console.log(`Added "${newHobby}" to the list of hobbies.`);
+}
+
+// Function to delete a specific hobby from the list
+function deleteHobby(hobbyToDelete) {
+  const index = hobbies.indexOf(hobbyToDelete);
+  if (index > -1) {
+    hobbies.splice(index, 1);
+    console.log(`Deleted "${hobbyToDelete}" from the list of hobbies.`);
+  } else {
+    console.log(`"${hobbyToDelete}" is not found in the list of hobbies.`);
+  }
+}
+
+// Example usage
+displayHobbies(); // Display initial list of hobbies
+
+addHobby("gardening"); // Add a new hobby
+displayHobbies(); // Display updated list of hobbies
+
+deleteHobby("painting"); // Delete a hobby
+displayHobbies(); // Display updated list of hobbies
+</script>
