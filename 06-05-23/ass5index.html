@@ -18,7 +18,7 @@
     </head>
     <body>
         <h1>Basic Information About Bhargav</h1>
-        <div id="info">
+        <div>
             <form class="Lbl">
                 <label for="fname"> FirstName: </label>
                 <input type="text" id="fname" name="fname" placeholder="FirstName">
@@ -44,7 +44,11 @@
         </div>
         <script>
             function myinfo(){
-                let fname=document.getElementById("fname").value;
+                let fn=document.getElementById("fname").value;
+                let ln=document.getElementById("lname").value;
+                let mail=document.getElementById("email").value;
+                let db =document.getElementById("DOB").value;
+                let pno=document.getElementById("PHNO").value;
                 alert("your form is submitted")
             }
         </script>
