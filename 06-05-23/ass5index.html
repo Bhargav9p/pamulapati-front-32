@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title> Profile information</title>
+        <style>
+            body{
+                background-color: hotpink;
+            }
+            h1{color: blue;
+                text-align: center;
+            }
+            .Lbl{
+                color: brown;
+                text-align: center;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Basic Information About Bhargav</h1>
+        <div id="info">
+            <form class="Lbl">
+                <label for="fname"> FirstName: </label>
+                <input type="text" id="fname" name="fname" placeholder="FirstName">
+                <br><br><br>
+                <label for="lname"> LastName: </label>
+                <input type="text" id="lname" name="lname" placeholder="LastName"><br><br><br>
+                <label for="email"> Email : </label>
+                <input type="text" id="email" name="email" placeholder="email"><br><br><br>
+                <label for="DOB"> DateOfBirth: </label>
+                <input type="date" id="DOB" name="DOB" placeholder="DateOfBirth"><br><br><br>
+                <label for="PHNO"> PhoneNumber </label>
+                <select>
+                    <option> 977 </option>
+                    <option> +1 </option>
+                    <option> +978 </option>
+                    <option> 979 </option>
+                    <option> 975 </option>
+                    <option> 974 </option>
+                </select>
+                <input type="tel" id="PHNO" name="PHNO" placeholder="Enter mobile number"><br><br><br>
+                <input type="button" onclick="myinfo()" value="submit"><br><br><br>
+            </form>
+        </div>
+        <script>
+            function myinfo(){
+                let fname=document.getElementById("fname").value;
+                alert("your form is submitted")
+            }
+        </script>
+    </body>
+</html>
