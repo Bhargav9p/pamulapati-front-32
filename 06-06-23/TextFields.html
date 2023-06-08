@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title> Profile information</title>
+        <style>
+            body{
+                background-color: aqua;
+            }
+            h1{color: blue;
+                text-align: center;
+            }
+            .Lbl{
+                color: brown;
+                text-align: center;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Fill Details Below</h1>
+        <div>
+            <form class="Lbl">
+                <label for="fname"> FirstName: </label>
+                <input type="text" id="fname" placeholder="FirstName">
+                <br><br><br>
+                <label for="lname"> LastName: </label>
+                <input type="text" id="lname" placeholder="LastName"><br><br><br>
+                <label for="email"> Email: </label>
+                <input type="text" id="email"  placeholder="abc@gmail.com"><br><br><br>
+                <label for="DOB"> DateOfBirth: </label>
+                <input type="date" id="DOB" placeholder="DateOfBirth"><br><br><br>
+                <label for="PHNO"> PhoneNumber </label>
+                <select>
+                    <option> 977 </option>
+                    <option> +1 </option>
+                    <option> +978 </option>
+                    <option> 979 </option>
+                    <option> 975 </option>
+                    <option> 974 </option>
+                </select>
+                <input type="tel" id="PHNO" placeholder="123456......."><br><br><br>
+                <label for="Gender"> Gender : </label>
+                <input type="radio" id="Gender" value="male" >Male
+                <input type="radio" id="Gender" value="male" >Female
+                <h4>Your Hobbies</h4>
+               
+                <input type="checkbox" id="read">
+                <label for="read"> Reading  </label><br>
+                
+                <input type="checkbox" id="wm">
+                <label for="wm"> Watching Movies  </label><br>
+                
+                <input type="checkbox" id="ba">
+                <label for="ba"> Badminton</label><br>
+                
+                <input type="checkbox" id="crt">
+                <label for="crt">Criket </label><br><br><br>
+                <input type="button" onclick="myinfo()" value="submit"><br><br><br>
+                
+            </form>
+            <p id="para" text-align: center>The given details are </p>
+        </div>
+        <script>
+            function myinfo(){
+                let fn =document.getElementById("fname").value;
+                console.log(fn)
+                let ln=document.getElementById("lname").value;
+                console.log(ln)
+                let em =document.getElementById("email").value;
+                console.log(email)
+                let db =document.getElementById("DOB").value;
+                console.log(DOB)
+                let pno =document.getElementById("PHNO").value;
+                console.log(PHNO)
+                let gen =document.getElementById("Gender").value;
+                console.log(Gender)
+                let re =document.getElementById("read").value;
+                console.log(read)
+                let Watching =document.getElementById("wm").value;
+                console.log(wm)
+                let bad =document.getElementById("ba").value;
+                console.log(ba)
+                let cricket =document.getElementById("crt").value;
+                console.log(crt)
+                if(fn==''||ln==''||em==''||db==''||pno==''||gen==''||re==''||Watching==''||bad==''||cricket==''){
+                    alert("Fill the all details")
+
+                }else{
+                    document.getElementById("para").innerHTML=fn+"<br>"+ln+"<br>"+em+"<br>"+db+"<br>"+gen+"<br>"+re+"<br>"+Watching+"<br>"+bad+"<br>"+cricket+"<br>";
+                    
+                }
+            }
+        </script>
+    </body>
+</html>
